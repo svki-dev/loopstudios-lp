@@ -1,0 +1,7 @@
+:root {
+    /*--- Colors ---*/
+    --black-color: hsl(0, 0%, 0%);
+    --white-color: hsl(0, 0%, 100%);
+    --darkgray-color: hsl(0, 0%, 55%);
+    --verydarkgray-color: hsl(0, 0%, 41%);
+}

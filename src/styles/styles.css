@@ -1,0 +1,33 @@
+@import "./vars.css";
+@import "./fonts.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./interactive.css";
+@import "./creations.css";
+@import "./footer.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    hyphens: none;
+}
+section {
+    width: 100%;
+
+    & > div {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.lazy-loading {
+    opacity: 0;
+    transform: scale(0);
+}

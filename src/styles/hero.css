@@ -1,0 +1,55 @@
+#hero-section {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    background-image: url("../assets/images/desktop/desktop-image-hero.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-wrapper {
+    width: 63%;
+    border: 3px solid var(--white-color);
+    margin-bottom: 21rem;
+    padding: 5rem 10rem 5rem 5rem;
+
+    & h1 {
+        font-family: "Josefin";
+        font-size: clamp(4rem, calc(4rem + ((1vw - 0.375rem) * 3.8835)), 10rem);
+        line-height: clamp(
+            4.5rem,
+            calc(4.5rem + ((1vw - 0.375rem) * 3.2362)),
+            9.5rem
+        );
+        color: var(--white-color);
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-container {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        padding: 0 clamp(2rem, calc(2rem + ((1vw - 0.375rem) * 5.178)), 10rem);
+        & .title-wrapper {
+            width: 100%;
+            padding: 2.5rem 30rem 2.5rem 2.5rem;
+            margin-bottom: 29rem;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #hero-section {
+        background-image: url("../assets/images/mobile/mobile-image-hero.jpg");
+    }
+
+    .title-wrapper {
+        padding-right: 5rem;
+    }
+}
