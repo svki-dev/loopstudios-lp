@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL (Github)](https://github.com/svki-dev/loopstudios-lp-main)
--   Live Site URL: [live site URL](https://sven-kilcher-dev-loopstudios-lp-main.netlify.app/)
+-   Solution URL: [Solution URL (Github)](https://github.com/svki-dev/loopstudios-lp)
+-   Live Site URL: [live site URL](https://sven-kilcher-dev-loopstudios-lp.netlify.app/)
 
 ## My process
 
