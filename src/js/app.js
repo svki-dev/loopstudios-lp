@@ -24,17 +24,18 @@ function showImage(image) {
 // Toggle menu on mobile devices
 const menuBtn = document.getElementById("hamburger-menu")
 const closeBtn = document.getElementById("close-menu")
+const headerNavigation = document.querySelector(".header-navigation");
+const body = document.querySelector("body");
 menuBtn.addEventListener("click", function (event) {
-    const headerNavigation = document.querySelector(".header-navigation");
     headerNavigation.classList.add("active");
     menuBtn.classList.remove("icon-active");
     closeBtn.classList.add("icon-active");
+    body.style.overflow = "hidden";
 });
 
 closeBtn.addEventListener("click", function (event) {
-    const headerNavigation = document.querySelector(".header-navigation");
     headerNavigation.classList.remove("active");
     menuBtn.classList.add("icon-active");
     closeBtn.classList.remove("icon-active");
-    console.log(menuBtn);
+    body.style.overflow = "auto";
 })
